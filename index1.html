@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Flight Search Engine</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./Album example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Album example for Bootstrap_files/album.css" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+	.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px;
+}
+.progress{
+    height: 20px;
+    background: #d4d7e6;
+    border-radius: 30px;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+.progress .progress-bar{
+    border-radius: 30px;
+    box-shadow: none;
+    position: relative;
+    animation: animate-positive 2s;
+}
+.progress .progress-bar:before{
+    content: "";
+    width: 100%;
+    height: 50%;
+    background: rgba(0,0,0,0.3);
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.progress .progress-bar:after{
+    content: "";
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #cbcbcb;
+    border: 8px solid #000;
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    z-index: 1;
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+.tkt-information .col-md-4 p{margin-bottom:5px;font-size:13px;}
+.tkt-information h4{margin-bottom:15px;}
+p{}
+  </style>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="bg-dark collapse" id="navbarHeader" style="">
+        
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class=" d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            Flight Search Engine
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <div class="album bg-light">
+        <div class="container-fluid" style="border:2px solid red;">
+
+			<div class="row">
+				<div class="col-md-3" style="border:2px solid green;">
+					<br>
+					<div class="">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#home">One-Way</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#menu1">Return</a>
+							</li>
+							
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content row">
+							
+							<div id="home" class="container tab-pane active"><br>
+								<form>
+									<div class="form-group">
+										<input type="text" class="form-control" id="usr" placeholder="Enter Origin City">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="pwd" placeholder="Enter Destination City">
+									</div>
+									<div class="form-group">
+										<select class="form-control" id="sel1">
+											<option>Departure date</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+									
+									<div class="form-group">
+										<select class="form-control" id="sel1">
+											<option>Passengers</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</form>
+							</div>
+							<div id="menu1" class="container tab-pane fade"><br>
+								<form>
+									<div class="form-group">
+										<input type="text" class="form-control" id="usr" placeholder="Enter Origin City">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="pwd" placeholder="Enter Destination City">
+									</div>
+									<div class="form-group">
+										<select class="form-control" id="sel1">
+											<option>Departure date</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<select class="form-control" id="sel1">
+											<option>Return date</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<select class="form-control" id="sel1">
+											<option>Passengers</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</form>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="">
+						<br>
+						<h6>Refine flight search </h6>
+						<br>
+						<div class="progress" style="margin-top:10px;">
+							<div class="progress-bar" style="width:50%; background:#3d99f9;"></div>
+						</div>
+						
+					</div>
+
+				</div>
+				<div class="col-md-9" style="border:2px solid yellow;">
+					</br>
+					<div class="alert alert-dark">
+						
+							<strong>Pune > Delhi >Pune</strong>
+						
+					</div>
+					
+					<section class="">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="card card-body bg-light">
+									
+									<div class="row tkt-information">
+										<div class="col-md-4">
+											<h4>RS. 9.500.00</h4>
+										
+											<p>AI-202</p>
+											<p>PNQ > DEL</p>
+											<p>Depart: 10.00AM</p>
+											<p>Arrive: 12.00PM</p>
+										</div>
+										<div class="col-md-4">
+											<h4 style="visibility:hidden">2</h4>
+											<p>AI-202</p>
+											<p>PNQ > DEL</p>
+											<p>Depart: 10.00AM</p>
+											<p>Arrive: 12.00PM</p>
+										</div>
+										<div class="col-md-4">
+											
+											<img class="img-fluid" src="image.jpg" alt="Chania" width="55%" style="margin-bottom:5px;border:1px solid #ddd;">
+											<button type="button" class="btn" style="font-size:13px;">Book this flight</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+				</div>
+
+			</div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="https://getbootstrap.com/docs/4.1/examples/album/#">Back to top</a>
+        </p>
+      </div>
+    </footer> -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Album example for Bootstrap_files/jquery-3.3.1.slim.min.js.download" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./Album example for Bootstrap_files/popper.min.js.download"></script>
+    <script src="./Album example for Bootstrap_files/bootstrap.min.js.download"></script>
+    <script src="./Album example for Bootstrap_files/holder.min.js.download"></script>
+  
+	<script>
+		$(document).ready(function(){
+    $('.progress-title > span').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        },{
+            duration: 1500,
+            easing: 'swing',
+            step: function (now){
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+});
+	</script>
+<svg xmlns="http://www.w3.org/2000/svg" width="288" height="225" viewBox="0 0 288 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="14" style="font-weight:bold;font-size:14pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
